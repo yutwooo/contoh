@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AMO Coffee Backyard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+
+    <img
+      src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop"
+      class="hero-image"
+    >
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>AMO Coffee Backyard</h1>
+
+      <div class="rating">
+        ⭐ 4.6 • 351 Ulasan
+      </div>
+
+      <p>
+        Tempat nongkrong nyaman dengan live music,
+        makanan enak, dan suasana outdoor modern.
+      </p>
+
+      <div class="button-group">
+
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+        >
+          <button class="btn">📍 Lokasi</button>
+        </a>
+
+        <button class="btn">
+          📞 Kontak
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="container">
+
+    <!-- SEARCH -->
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari makanan atau minuman..."
+      >
+
+    </div>
+
+    <!-- MENU -->
+    <h2 class="title">
+      Menu Favorit
+    </h2>
+
+    <section class="menu-grid" id="menuGrid">
+
+      <!-- ITEM 1 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Caramel Latte</h3>
+
+          <p>Kopi creamy caramel premium.</p>
+
+          <div class="price">28000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Caramel Latte',28000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>French Fries</h3>
+
+          <p>Kentang crispy spesial.</p>
+
+          <div class="price">22000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('French Fries',22000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Pizza Backyard</h3>
+
+          <p>Pizza homemade favorit.</p>
+
+          <div class="price">45000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Pizza Backyard',45000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Burger Smoke</h3>
+
+          <p>Burger juicy premium.</p>
+
+          <div class="price">35000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Burger Smoke',35000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 5 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Salad Bowl</h3>
+
+          <p>Salad sehat fresh.</p>
+
+          <div class="price">30000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Salad Bowl',30000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 6 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1523987355523-c7b5b84d50f0?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Matcha Ice</h3>
+
+          <p>Minuman matcha dingin.</p>
+
+          <div class="price">26000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Matcha Ice',26000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 7 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Chicken Steak</h3>
+
+          <p>Steak ayam creamy sauce.</p>
+
+          <div class="price">42000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Chicken Steak',42000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 8 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Spaghetti</h3>
+
+          <p>Pasta creamy spesial.</p>
+
+          <div class="price">39000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Spaghetti',39000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 9 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Donut Choco</h3>
+
+          <p>Donut coklat lembut.</p>
+
+          <div class="price">18000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Donut Choco',18000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ITEM 10 -->
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200">
+
+        <div class="menu-content">
+
+          <h3>Nasi Goreng</h3>
+
+          <p>Nasi goreng backyard.</p>
+
+          <div class="price">32000</div>
+
+          <button
+            class="order-btn"
+            onclick="addToCart('Nasi Goreng',32000)"
+          >
+            Tambah Pesanan
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- CART BUTTON -->
+  <div class="cart" onclick="toggleCart()">
+
+    🛒
+
+    <div class="cart-count" id="cart-count">
+      0
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-box">
+
+      <h2>ABOUT</h2>
+
+      <p>
+        AMO Coffee Backyard adalah tempat nongkrong modern
+        dengan suasana nyaman, live music, dan berbagai
+        pilihan makanan serta minuman berkualitas.
+      </p>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="footer-box">
+
+      <h2>BROWSE</h2>
+
+      <a href="#">ABOUT US</a>
+      <a href="#">PRODUCTS</a>
+
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="footer-box">
+
+      <h2>ADDRESS</h2>
+
+      <p>
+        Jl. S. Prawiro No.07, RT.40/RW.07,
+        Suka Bangun, Kec. Sukarami,
+        Kota Palembang,
+        Sumatera Selatan 30151
+      </p>
+
+      <p class="phone">
+        📞 081367263469
+      </p>
+
+      <div class="socials">
+
+        <a href="https://facebook.com" target="_blank">
+          Facebook
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          Instagram
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+          Twitter
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          Youtube
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+  <!-- CART PANEL -->
+  <div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+
+      <h2>Keranjang</h2>
+
+      <button onclick="toggleCart()">
+        ✖
+      </button>
+
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+
+      <h3 id="total-price">
+        Total: Rp 0
+      </h3>
+
+      <button class="checkout-btn">
+        Checkout
+      </button>
+      <!-- CHECKOUT MODAL -->
+<div class="checkout-modal" id="checkoutModal">
+
+  <div class="checkout-box">
+
+    <h2>Checkout</h2>
+
+    <label>Nama Pembeli</label>
+    <input type="text" placeholder="Masukkan nama">
+
+    <label>Metode Pembayaran</label>
+
+    <select id="paymentMethod">
+
+      <option value="">
+        Pilih Pembayaran
+      </option>
+
+      <option>
+        Bank BCA
+      </option>
+
+      <option>
+        Bank BRI
+      </option>
+
+      <option>
+        Bank Mandiri
+      </option>
+
+      <option>
+        Bank BNI
+      </option>
+
+      <option>
+        Bank CIMB
+      </option>
+
+      <option>
+        Bank Permata
+      </option>
+
+      <option>
+        Bank Danamon
+      </option>
+
+      <option>
+        Tunai Bayar ke Kasir
+      </option>
+
+    </select>
+
+    <button class="pay-btn" onclick="processCheckout()">
+      Bayar Sekarang
+    </button>
+
+    <button class="close-btn" onclick="closeCheckout()">
+      Tutup
+    </button>
+
+  </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
